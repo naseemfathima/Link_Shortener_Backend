@@ -3,8 +3,6 @@ package com.urlshortner.controller;
 import java.io.IOException;
 import java.time.LocalDateTime;
 
-import jakarta.servlet.http.HttpServletResponse;
-
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,7 +20,8 @@ import org.springframework.web.client.HttpServerErrorException;
 import com.urlshortner.entity.Url;
 import com.urlshortner.entity.UrlErrorResponse;
 import com.urlshortner.service.UrlService;
-import com.urlshortner.service.Impl.UrlServiceImpl;
+
+import jakarta.servlet.http.HttpServletResponse;
 
 @RestController
 @RequestMapping("/api")
